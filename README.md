@@ -220,11 +220,46 @@ git push
 Sample API requests added to README and pushed
 
 
+requirements.txt
+
+fastapi
+uvicorn
+dateparser
+pytz
+pytesseract
+pillow
+
+git add requirements.txt
+git commit -m "Add requirements.txt with project dependencies"
+git push
+
+requirements.txt added and pushed
+
+cd path/to/appointment-scheduler
+
+python -m venv venv
+venv\Scripts\activate
+
+python3 -m venv venv
+source venv/bin/activate
+
+pip install -r requirements.txt
+uvicorn main:app --reload
+
+http://127.0.0.1:8000/docs
+Backend running locally and tested
 
 
 
+ngrok http 8000
 
 
+Forwarding                    https://abcdef1234.ngrok.io -> http://localhost:8000
+
+
+https://abcdef1234.ngrok.io/appointment/text
+
+Ngrok setup done with public URL: <your-ngrok-URL>
 
 
         
